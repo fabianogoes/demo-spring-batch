@@ -1,4 +1,4 @@
-package com.example.batch.employee
+package com.example.employee.model
 
 data class Employee(
         var id: String? = null,

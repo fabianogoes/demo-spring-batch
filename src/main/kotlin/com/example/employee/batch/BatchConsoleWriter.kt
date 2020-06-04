@@ -1,10 +1,11 @@
-package com.example.batch.employee
+package com.example.employee.batch
 
+import com.example.employee.model.Employee
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.batch.item.ItemWriter
 
-class EmployeeBatchWriter : ItemWriter<Employee> {
+class BatchConsoleWriter : ItemWriter<Employee> {
 
     private val logger: Logger = LoggerFactory.getLogger(javaClass)
 

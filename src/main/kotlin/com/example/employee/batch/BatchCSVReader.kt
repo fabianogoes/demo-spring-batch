@@ -1,14 +1,13 @@
-package com.example.batch.employee
+package com.example.employee.batch
 
-import org.slf4j.Logger
-import org.slf4j.LoggerFactory
+import com.example.employee.model.Employee
 import org.springframework.batch.item.file.FlatFileItemReader
 import org.springframework.batch.item.file.mapping.BeanWrapperFieldSetMapper
 import org.springframework.batch.item.file.mapping.DefaultLineMapper
 import org.springframework.batch.item.file.transform.DelimitedLineTokenizer
 import org.springframework.core.io.ClassPathResource
 
-class EmployeeBatchCSVReader :FlatFileItemReader<Employee>() {
+class BatchCSVReader :FlatFileItemReader<Employee>() {
 
     companion object {
         val CSV_NAMES = arrayOf("id", "firstName", "lastName")
